@@ -1,12 +1,12 @@
 /*
-TP00 – 2019
-Título: Un Escaner Elemental
+TP00 â€“ 2019
+TÃ­tulo: Un Escaner Elemental
 Grupo 4
 Integrantes:
-Bordón Pedro Nicolás	142084-7
-Del Pin Matías			169009-7
+BordÃ³n Pedro NicolÃ¡s	142084-7
+Del Pin MatÃ­as			169009-7
 Lucchesi Maximiliano	163312-0
-Sánchez Javier			129462-3
+SÃ¡nchez Javier			129462-3
 */
 
 #include <stdio.h>
@@ -18,7 +18,7 @@ int main()
     int errores = 0;
     int constantes = 0;
     int identificadores = 0;
-    int token;
+    int tok;
 
     FILE *f;
 
@@ -35,8 +35,8 @@ int main()
 
        do
        {
-            token = scanner(f);
-            switch(token)
+            tok = scanner(f);
+            switch(tok)
             {
                 case CONSTANTE:
 					printf("Constante entera\n");
@@ -51,7 +51,7 @@ int main()
 					errores ++;
 					break;
             }
-       }while(token == CONSTANTE || token == IDENTIFICADOR || token == ERROR);
+       }while(tok == CONSTANTE || tok == IDENTIFICADOR || tok == ERROR);
 
 
         printf("----\nTotales:");
