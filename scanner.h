@@ -6,7 +6,7 @@ typedef enum
 {	CONSTANTE=0,
 	IDENTIFICADOR=1,
 	ERROR=2,
-	FDT=3,
+	FDC=3,
 } TOKEN;
 
 TOKEN scanner (FILE* f);
