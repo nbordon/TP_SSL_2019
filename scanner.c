@@ -69,7 +69,7 @@ TOKEN scanner (FILE* f)
     }
 	
     if(estado == 6)
-        return FDT;
+        return FDC;
 	
     if(estado == 7)
 	{
