@@ -22,7 +22,7 @@ int main()
 
     FILE *f;
 
-    f = fopen ("lexemas.txt","r");
+    f = fopen ("prueba.txt","r");
 
     if(f == NULL)
     {
@@ -61,5 +61,5 @@ int main()
     }
 
 
-    return EXIT_SUCCESS;
+    return 0;
 }

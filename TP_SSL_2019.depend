@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1565050610 source:c:\proyectosssl\tp_ssl_2019\scanner.c
+	<stdio.h>
+	<stdbool.h>
+	"scanner.h"
+
+1565050610 c:\proyectosssl\tp_ssl_2019\scanner.h
+
+1565051148 source:c:\proyectosssl\tp_ssl_2019\main.c
+	<stdio.h>
+	<stdbool.h>
+	"scanner.h"
+

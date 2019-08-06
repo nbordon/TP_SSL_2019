@@ -4,7 +4,7 @@
 
 static int tabla[8][5] =
 {
-/* TT  |     L  D  O  Es FDC */ 
+/* TT  |     L  D  O  Es FDC */
 /* 0  */    {1 ,2 ,3 ,0 ,7 },
 /* 1  */    {1 ,1 ,4 ,4 ,4 },
 /* 2  */    {5 ,2 ,5 ,5 ,5 },
@@ -61,19 +61,19 @@ TOKEN scanner (FILE* f)
         ungetc(a, f);
         return IDENTIFICADOR;
     }
-	
+
     if(estado == 5)
 	{
         ungetc(a, f);
         return CONSTANTE;
     }
-	
+
     if(estado == 6)
-        return FDC;
-	
-    if(estado == 7)
 	{
         ungetc(a, f);
         return ERROR;
     }
+
+    if(estado == 7)
+        return FDC;
 }
