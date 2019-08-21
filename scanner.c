@@ -32,13 +32,7 @@ int transicion (char a, FILE* f)
 
 bool haytoken(int estado)
 {
-    if(estado == 4) return true;
-
-    if(estado == 5) return true;
-
-    if(estado == 6) return true;
-
-    if(estado == 7) return true;
+    if(estado >= 4) return true;
 
     else  return false;
 };
