@@ -10,6 +10,7 @@ Sánchez Javier			129462-3
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 #include "scanner.h"
 
@@ -61,5 +62,5 @@ int main()
     }
 
 
-    return 0;
+    return EXIT_SUCCESS;
 }
